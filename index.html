@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal Genius</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nameInputScreen">
+        <h1>Enter your name to start</h1>
+        <input type="text" id="playerName" placeholder="Your name">
+        <button id="startButton">Start</button>
+    </div>
+
+    <div id="leaderboardScreen" style="display: none;">
+        <h1>Leaderboard</h1>
+        <table id="leaderboard">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Player names will be added here -->
+            </tbody>
+        </table>
+        <button id="startGameButton">Start Game</button>
+    </div>
+
+    <div id="gameArea" style="display: none;">
+        <h1>Journal Genius</h1>
+        <div id="pointsBoard">
+            <p>Debit: <span id="pointsDr">0</span></p>
+            <p>Credit: <span id="pointsCr">0</span></p>
+        </div>
+        <div id="dropArea">
+            <div class="divider-line"></div>
+        </div>
+        <div id="controls">
+            <button id="leftButton">Debit</button>
+            <button id="rightButton">Credit</button>
+        </div>
+    </div>
+
+    <div id="resultScreen" style="display: none;">
+        <h1 id="resultMessage"></h1>
+        <p id="pointsSummary"></p>
+        <button id="retryButton" style="display: none;">Retry</button>
+        <button id="nextLevelButton" style="display: none;">Next Level</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
